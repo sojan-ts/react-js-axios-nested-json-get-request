@@ -27,15 +27,15 @@ function App() {
           return (
             <div key={item.index}>
              <h3>{item.events_title}</h3>
-                                      {item['events_gallery_image'].map((item1, index) => {
-                                        console.log(item1)
-                                                return (
-                                                  <div key={item1.index}>
-                                                 
-                                                <i>{item1.image}</i>
-                                                  </div>
-                                                );
-                                              })}
+            {item['events_gallery_image'].map((item1, index) => {
+            console.log(item1)
+                  return (
+                    <div key={item1.index}>
+
+                  <i>{item1.image}</i>
+                    </div>
+                  );
+                })}
             </div>
           );
         })}
